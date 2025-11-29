@@ -111,7 +111,19 @@ body {
   width: 100%;
   
   /* background-color: #241b1b87; */
-  background: linear-gradient(to bottom,#000000c9, #00000075,  rgba(0, 0, 0, 0.603) ),   url('http://dnm.nflximg.net/api/v6/aHn-vO8ub4KPvcVsSA3di9cME-o/AAAAQCcyGMgUWk6v1RyiD73co7dcsigXj0x2K2czWhDhglD6uC3m8u6Yz-WUG3esll-1.jpg');
+  background: linear-gradient(to bottom,#000000c9, #00000075,  rgba(0, 0, 0, 0.603) ),   url('https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  
+}
+
+.backgroundxn {
+  width: 100%;
+  
+  /* background-color: #241b1b87; */
+  background: linear-gradient(to bottom,#000000d8, #000000ce,  rgba(0, 0, 0, 0.603) ),   url('https://media.istockphoto.com/id/1348268408/photo/multicultural-society-and-international-tolerance-african-asian-american-and-caucasian.jpg?s=1024x1024&w=is&k=20&c=N_DOAsH-dmx093u-mu1Zs8lSzKW_cl_TDKiTZnR_Ewc=');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

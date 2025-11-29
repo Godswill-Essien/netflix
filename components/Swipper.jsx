@@ -48,7 +48,7 @@ export default function NetflixSwiper() {
                             <img
                                 src={`${IMAGE_BASE_URL}${movie.poster_path}`}
                                 alt={movie.title}
-                                className="w-full h-60 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
+                                className="w-full h-60 object-cover rounded-lg transition-transform duration-500 group-hover:scale-105 ease-in "
                             />
                             <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black/70 to-transparent p-3 text-white font-bold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 {movie.title}
@@ -61,7 +61,7 @@ export default function NetflixSwiper() {
             {/* Movie Detail Modal */}
             {selectedMovie && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 p-6 z-50">
-                    <div className="bg-gray-800 p-6 rounded-lg max-w-md w-full relative z-50">
+                    <div className="bg-black background p-6 rounded-lg max-w-md w-full relative z-50">
                         <button
                             className="absolute top-2 right-2 text-white text-xl"
                             onClick={() => setSelectedMovie(null)}

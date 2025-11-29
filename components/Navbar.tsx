@@ -96,7 +96,7 @@ export default function Navbar() {
 
       </div>
 
-      <div className="relative md:top-48  sm:bg-red-900   top-[145px]">
+      <div className=" relative md:relative md:translate-y-[-40px] sm:bg-red-900   top-[145px]">
         <div className="absolute bottom-0 left-0 w-full h-16 "></div>
         <div className="absolute bottom-0 left-0 w-full h-16  bg-black rounded-t-[50%] border-t-4 border-red-700 shadow-2xl shadow-black"></div>
       </div>

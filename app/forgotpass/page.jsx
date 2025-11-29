@@ -19,7 +19,7 @@ export default function ForgotPassword() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="w-full max-w-md bg-neutral-900/50 backdrop-blur-xl text-white rounded-2xl shadow-xl p-8"
+        className="w-full max-w-md bg-neutral-900/50 backdrop-blu text-white rounded-2xl shadow-xl p-8"
       >
         <h1 className="text-3xl font-bold mb-4 text-center">Forgot Password</h1>
         <p className="text-neutral-400 text-center mb-6">
