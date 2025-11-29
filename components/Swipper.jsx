@@ -27,7 +27,7 @@ export default function NetflixSwiper() {
     };
 
     return (
-        <div className="w-full lg:mt-10   md:mt-10 sm:mt-10 max-w-6xl mx-auto p-6 bg-black text-white rounded-lg shadow-2xl relative">
+        <div className="w-full lg:mt-10 min-h-fit  md:mt-10 sm:mt-10 max-w-6xl mx-auto p-6 bg-black text-white rounded-lg shadow-2xl relative">
             <h2 className="text-xl font-extrabold mb-6 text-start">Trending Now</h2>
             <Swiper
                 modules={[Navigation, Pagination]}

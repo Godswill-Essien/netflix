@@ -4,19 +4,20 @@ import React, { useState } from 'react';
 import { signIn } from 'next-auth/react';
 import { IoIosArrowForward } from "react-icons/io";
 import axios from 'axios';
+import { isAuth } from "../app/api/auth/depends"
 
 export default function Navbar() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isValidEmail, setIsValidEmail] = useState(false);
 
-  const handleEmailChange = (e) => {
+  const handleEmailChange = (e: any) => {
     const value = e.target.value;
     setEmail(value);
     setIsValidEmail(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
 
@@ -46,21 +47,27 @@ export default function Navbar() {
       callbackUrl: '/',
     });
 
-    if (res.error) {
-      console.error(res.error);
+    if (res!.error) {
+      console.error(res!.error);
     }
   };
 
   return (
-    <div className="px hero md:h-[700px] h-[600px] " >
+    <div className="px hero max-md:h-[700px] h-[600px] " >
       <nav className='flex justify-around  md:gap-x-52  items-center py-6 '>
         <div className='netflix '> </div>
         <div >
+          {isAuth() ? (
+          <Link href="/profile " className='font-sans font-bold  py-2 px-4 rounded-md   bg-gradient-to-l from-red-700 to-red-600 transition-all duration-500 ease-in-out hover:opacity-75'> Dashboard</Link>
+
+          ) : (
           <Link href="/signup " className='font-sans font-bold  py-2 px-4 rounded-md   bg-gradient-to-l from-red-700 to-red-600 transition-all duration-500 ease-in-out hover:opacity-75'> Sign in</Link>
+
+          ) }
         </div>
       </nav>
 
-      <div className='translate-y-6 md:mt-28 px-4  flex flex-col gap-5 '>
+      <div className='translate-y-6 md:mt-28 px-4 min-h-fit  flex flex-col gap-5 '>
         <div className=''>
           <p className='font-sans md:hidden text-[37px]  font-extrabold'>Unlimited movies, TV shows,  and  more</p>
           <p className='font-sans hidden  px-2 md:block text-[34px] md:text-[58px] font-extrabold '>Unlimited movies, <br /> TV  shows,  and  more</p>

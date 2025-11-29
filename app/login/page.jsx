@@ -70,12 +70,14 @@ export default function Signin() {
 
     return (
         <div>
+            {/* <img className="" src="https://assets.nflxext.com/ffe/siteui/vlv3/f6e7f6df-6973-46ef-b98f-12560d2b3c69/web/NG-en-20250317-TRIFECTA-perspective_8b62199f-48df-4f79-ac95-d9ef46920eed_small.jpg">
+            </img> */}
             <div className="background">
                 <div className="hidden md:block">
                     <div className="netflix translate-x-36 "></div>
                 </div>
                 <div className="flex justify-center items-center min-h-screen">
-                    <div className="w-full max-w-lg mb-10 lg:max-w-xl xl:max-w-2xl bg-opacity-60 md:max-md:bg-black bg-black p-10 rounded-lg shadow-md md:w-[450px]">
+                    <div className="w-full max-w-lg mb-10 lg:max-w-xl xl:max-w-2xl bg-opacity-60 md:max-md:bg-black/60 bg-black/60 backdrop-blur-md p-10 rounded-lg shadow-md md:w-[450px]">
                         <div className="netflix-1 md:hidden translate-x-[-10px]"></div>
                         <h1 className="text-3xl font-bold text-white flex justify-start mb-6">Log In</h1>
 
