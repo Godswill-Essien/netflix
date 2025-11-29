@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+ 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.netflix{
+  width: 40%;
+  height: 13.5vh;
+  /* background-color: #241b1b87; */
+  background: url('https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production_2025-08-26/consent/87b6a5c0-0104-4e96-a291-092c11350111/0198e689-25fa-7d64-bb49-0f7e75f898d2/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:left ;
+  border-radius: inherit;
+  /* text-align: center; */
+  
+
+
+}
+
+.netflix-2{
+  width: 70%;
+  height: 13.5vh;
+  /* background-color: #241b1b87; */
+  background: url('https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/consent/87b6a5c0-0104-4e96-a291-092c11350111/01938dc4-59b3-7bbc-b635-c4131030e85f/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:left ;
+  border-radius: inherit;
+  /* text-align: center; */
+  
+
+
+}
+
+.netflix-1{
+  width: 50%;
+  height: 10vh;
+  /* background-color: #241b1b87; */
+  background: url('https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/consent/87b6a5c0-0104-4e96-a291-092c11350111/01938dc4-59b3-7bbc-b635-c4131030e85f/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:left ;
+  border-radius: inherit;
+  /* text-align: center; */
+  
+
+
+}
+
+.hero{
+  width: 100%;
+  /* height: 107vh; */
+  /* background-color: #241b1b87; */
+  background: linear-gradient(to bottom,#000000e7, #00000085,  rgba(0, 0, 0, 0.904) ),   url('https://assets.nflxext.com/ffe/siteui/vlv3/f6e7f6df-6973-46ef-b98f-12560d2b3c69/web/NG-en-20250317-TRIFECTA-perspective_8b62199f-48df-4f79-ac95-d9ef46920eed_small.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  
+
+
+}
+
+.background {
+  width: 100%;
+  
+  /* background-color: #241b1b87; */
+  background: linear-gradient(to bottom,#000000c9, #00000075,  rgba(0, 0, 0, 0.603) ),   url('https://assets.nflxext.com/ffe/siteui/vlv3/f6e7f6df-6973-46ef-b98f-12560d2b3c69/web/NG-en-20250317-TRIFECTA-perspective_8b62199f-48df-4f79-ac95-d9ef46920eed_small.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  
+
+
+}
+
+.backgroundx {
+  width: 100%;
+  
+  /* background-color: #241b1b87; */
+  background: linear-gradient(to bottom,#000000c9, #00000075,  rgba(0, 0, 0, 0.603) ),   url('http://dnm.nflximg.net/api/v6/aHn-vO8ub4KPvcVsSA3di9cME-o/AAAAQCcyGMgUWk6v1RyiD73co7dcsigXj0x2K2czWhDhglD6uC3m8u6Yz-WUG3esll-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  
+}
+
+.background-1 {
+  width: 100%;
+  
+  /* background-color: #241b1b87; */
+  background: linear-gradient(to bottom,#000000c9, #00000075,  rgba(0, 0, 0, 0.603) ),   url('https://media.istockphoto.com/id/1366554092/photo/the-programmer-is-logging-in-and-encrypting-it-for-security-with-cybersecurity-technology.jpg?s=1024x1024&w=is&k=20&c=CNvA3oJ0-jatb4eLfUGIdqXIVEmvoYTipD-8dsw5CQA=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  
+
+
+}
