@@ -83,7 +83,7 @@ body {
   width: 100%;
   /* height: 107vh; */
   /* background-color: #241b1b87; */
-  background: linear-gradient(to bottom,#000000e7, #00000085,  rgba(0, 0, 0, 0.904) ),   url('https://assets.nflxext.com/ffe/siteui/vlv3/f6e7f6df-6973-46ef-b98f-12560d2b3c69/web/NG-en-20250317-TRIFECTA-perspective_8b62199f-48df-4f79-ac95-d9ef46920eed_small.jpg');
+  background: linear-gradient(to bottom,#000000e7, #00000085,  rgba(0, 0, 0, 0.904) ),   url('https://assets.nflxext.com/ffe/siteui/vlv3/30c8b9f4-3db9-4b3b-a1ee-8fa56531b712/web/NG-en-20251201-TRIFECTA-perspective_31da39cf-8b99-4e39-a11e-7216e6789bc6_small.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -143,4 +143,28 @@ body {
   
 
 
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 45px;
+  aspect-ratio: 1;
+  --c:no-repeat linear-gradient(#000 0 0);
+  background: 
+    var(--c) 0    0,
+    var(--c) 0    100%, 
+    var(--c) 50%  0,  
+    var(--c) 50%  100%, 
+    var(--c) 100% 0, 
+    var(--c) 100% 100%;
+  animation: l12 1s infinite;
+}
+@keyframes l12 {
+ 0%,100%{background-size:20% 50%}
+ 16.67% {background-size:20% 30%, 20% 30%, 20% 50%, 20% 50%, 20% 50%, 20% 50%}
+ 33.33% {background-size:20% 30%, 20% 30%, 20% 30%, 20% 30%, 20% 50%, 20% 50%}
+ 50%    {background-size:20% 30%, 20% 30%, 20% 30%, 20% 30%, 20% 30%, 20% 30%}
+ 66.67% {background-size:20% 50%, 20% 50%, 20% 30%, 20% 30%, 20% 30%, 20% 30%}
+ 83.33% {background-size:20% 50%, 20% 50%, 20% 50%, 20% 50%, 20% 30%, 20% 30%}
 }

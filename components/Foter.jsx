@@ -3,6 +3,13 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { FaChevronDown, FaGlobe } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io5";
+import { FaPhone } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaLongArrowAltUp } from "react-icons/fa";
+
 
 const languages = [
     { code: "en", label: "English" },
@@ -37,7 +44,7 @@ export default function Footer() {
                 <Link href="#" className="underline">Legal Notices</Link>
                 <Link href="#" className="underline">Only on Netflix</Link>
             </div>
-            
+
             <div className="  lg:mr-[800px] md:mr-[800px] mt-8  ">
                 <button onClick={() => setIsOpen(!isOpen)} className="flex  md:translate-x-[-44px]   items-center gap-2  text-white px-4 py-2 rounded-lg shadow-md border">
                     <FaGlobe className="w-4  h-4 flex justify-start items-start" /> {selectedLanguage.label} <FaChevronDown className="w-4 h-4" />
@@ -61,6 +68,9 @@ export default function Footer() {
                     </div>
                 )}
             </div>
+
+        
+         
         </div>
     );
 }
